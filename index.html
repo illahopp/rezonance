@@ -23,9 +23,17 @@
     </style>
   </head>
   <body>
-    <video loop controls>
+    <video id="video" loop controls>
       <source src="Rezonance_Ilona_Hykelova.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+    
+    <script>
+      let video = document.body.querySelector("#video")
+      video.addEventListener("click", e => {
+        video.controls = false
+      })
+      
+    </script>
   </body>
 </html>
