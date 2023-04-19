@@ -1,1 +1,31 @@
-hello
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Black Background Page with Video</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <video loop controls="false">
+      <source src="xxxxx.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </body>
+</html>
